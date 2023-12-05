@@ -26,8 +26,8 @@ function salvaNome() {
   mostraNomeSalvato();
 
 
-
-
+  
+  // Esercizio 2
 
 
   function avviaContatore() {
