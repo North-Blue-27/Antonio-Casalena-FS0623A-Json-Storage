@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    background-color: teal;
+}
+
+h1 {
+    background-color: yellowgreen;
+    color: salmon;
+    margin-top: 200px;
+}
+
+button {
+    display: inline-block;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: ghostwhite;
+  background-color: salmon;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: yellowgreen;
+    color: black;
+  }
+  
+  
+
+
+.esercizioUno {
+    padding-bottom: 200px;
+}
+
+
+.esercizioDue {
+    max-width: 100%;
+    border: 2px solid black;
+}
+
+.esercizioDue h1 {
+    margin-top: 0;
+}  
+
+.esercizioDue span {
+    color: goldenrod;
+}
