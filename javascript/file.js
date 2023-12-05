@@ -1,17 +1,17 @@
-// Funzione per salvare il nome in localStorage
+// Salvare il nome
 function salvaNome() {
     const nameInput = document.getElementById('nameInput').value;
     localStorage.setItem('nomeUtente', nameInput);
     mostraNomeSalvato();
   }
   
-  // Funzione per rimuovere il nome salvato da localStorage
+  // Rimuovere il nome 
   function rimuoviNome() {
     localStorage.removeItem('nomeUtente');
     mostraNomeSalvato();
   }
   
-  // Funzione per mostrare il nome salvato sopra l'input field
+  // Mostra il nome
   function mostraNomeSalvato() {
     const savedNameDiv = document.getElementById('savedName');
     const nomeUtente = localStorage.getItem('nomeUtente');
@@ -22,7 +22,7 @@ function salvaNome() {
     }
   }
   
-  // Mostra il nome salvato quando la pagina viene caricata
+  
   mostraNomeSalvato();
 
 
@@ -45,13 +45,13 @@ function salvaNome() {
       sessionStorage.setItem('tempoTrascorso', seconds.toString());
     }, 1000);
   
-    // Reset del contatore e sessionStorage solo quando la pagina viene chiusa
+    // Reset del contatore
     window.addEventListener('beforeunload', () => {
       clearInterval(interval);
       sessionStorage.removeItem('tempoTrascorso');
     });
   
-    // Impostiamo un evento per la gestione dell'aggiornamento della pagina
+    // Caricamento pagina 
     window.addEventListener('unload', () => {
       sessionStorage.setItem('tempoTrascorso', seconds.toString());
     });
